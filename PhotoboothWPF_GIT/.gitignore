@@ -1,0 +1,58 @@
+# Visual Studio specific
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+
+# NuGet packages
+packages/
+!packages/repositories.config
+
+# Logs
+*.log
+
+# IDE settings
+*.slnLaunch.user
+
+# Compiled files
+*.exe
+*.dll
+!EDSDK.dll
+*.pdb
+*.cache
+*.ilk
+*.ilk
+*.map
+*.pch
+*.obj
+*.pdb
+*.pgc
+*.pgd
+*.tmp
+*.tlog
+*.vspx
+*.htm
+
+# Misc
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# BusinessObject and EDSDKLib folders
+BussinessObject/bin/
+BussinessObject/obj/
+EDSDKLib/bin/
+EDSDKLib/obj/
+EDSDKLib/Dll/*
+!EDSDKLib/Dll/EDSDK.dll
+
+# PhotoBooth App specific
+PhotoBooth App/bin/
+PhotoBooth App/obj/
+PhotoBooth App/Properties/
+PhotoBooth App/history/

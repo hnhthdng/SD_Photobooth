@@ -1,0 +1,85 @@
+﻿<ui:FluentWindow x:Class="PhotoBooth_App.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:local="clr-namespace:PhotoBooth_App"
+        mc:Ignorable="d"
+        Icon="pack://application:,,,/image/tech_x.ico"      
+        Title="SD Photobooth" Background="White" Height="720" Width="1080" WindowStartupLocation="CenterScreen" WindowState="Maximized" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/image/background_login.png"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="650"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <!-- Login Box -->
+        <Border Grid.Column="1" Margin="50,0,10,0"  VerticalAlignment="Center"  HorizontalAlignment="Center" >
+            <Border.Background>
+                <SolidColorBrush Color="White"/>
+            </Border.Background>
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <!-- Logo -->
+                <Image Source="/image/tech_x.png" Width="150" Height="150" HorizontalAlignment="Center" />
+
+                <!-- Title -->
+                <TextBlock Text="TechX Photobooth" FontSize="40" Foreground="#fc9330" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+                <TextBlock Text="Nhập CODE để bắt đầu chụp ảnh!" FontSize="18" FontWeight="Bold" Foreground="#666" HorizontalAlignment="Center" Margin="0,100,0,20"/>
+
+                <!-- Access Code Input -->
+                <Border Background="#F3F3F3" CornerRadius="8" Padding="5" Width="360" Height="50" Margin="0,0,0,10">
+                    <TextBox Name="AccessCodeTextBox"  FontSize="20" FontWeight="DemiBold"  HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" BorderThickness="0" Background="Transparent"/>
+                </Border>
+
+                <Button Content="Bắt đầu chụp ảnh" Width="360" Height="45" Background="#fc9330" Foreground="White" FontSize="24" FontWeight="Bold" Margin="0,10,0,10" Click="Button_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="8" Padding="10" BorderBrush="#fc9330">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="#e07d1f"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+
+                <Button Name="GuestButton" Content="Tiếp tục với tư cách khách" Width="360" Height="45" Background="#FFFFFF" Foreground="#fc9330" FontSize="24" FontWeight="Bold" Margin="0,10,0,10" Click="GuestButton_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="8" Padding="10" BorderBrush="#fc9330" BorderThickness="1">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="Background" Value="#F3F3F3"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</ui:FluentWindow>

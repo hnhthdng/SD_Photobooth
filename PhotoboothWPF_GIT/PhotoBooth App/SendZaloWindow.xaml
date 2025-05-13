@@ -1,0 +1,18 @@
+﻿<Window x:Class="PhotoBooth_App.SendZaloWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhotoBooth_App"
+        mc:Ignorable="d"
+           Title="Send Zalo" Height="450" Width="400" WindowStartupLocation="CenterOwner" WindowStyle="ToolWindow"
+        ShowInTaskbar="False">
+    <Grid Background="White">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image Source="image/zalo_qr.png" Width="339" Height="333"/>
+            <TextBlock Margin="8" FontSize="14" FontStyle="Italic" TextWrapping="Wrap" TextAlignment="Center">Sử dụng điện thoại quét mã QR trên để nhận ảnh</TextBlock>
+            <Button Content="Xác nhận" Width="100"  Foreground="white" Background="#fc9330"  Tag="#e07d1f" FontWeight="Bold" FontSize="80"
+   BorderBrush="white" Height="50" Margin="5" Click="ConfirmButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

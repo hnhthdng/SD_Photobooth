@@ -1,0 +1,61 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <system:String x:Key="BackButton_Text">Back</system:String>
+    <system:String x:Key="DeleteButton_Text">Delete</system:String>
+
+    <system:String x:Key="SelectFrame_Title">PLEASE CHOOSE THE FRAME </system:String>
+    <system:String x:Key="SelectFrame_Button">SELECT FRAME</system:String>
+
+    <system:String x:Key="TakePhoto_Title">PLEASE LOOK AT THE SCREEN AND TAKE A PHOTO</system:String>
+    <system:String x:Key="TakePhoto_ZoomInBtn">ZOOM IN</system:String>
+    <system:String x:Key="TakePhoto_ZoomOutBtn">ZOOM OUT</system:String>
+    <system:String x:Key="TakePhoto_TakeBtn">Take Photo</system:String>
+    <system:String x:Key="TakePhoto_NextBtn">Next</system:String>
+    <system:String x:Key="TakePhoto_List">Captured Photo List</system:String>
+
+    <system:String x:Key="PhotoSelected_TakeBtn">Retake</system:String>
+    <system:String x:Key="PhotoSelected_DeleteBtn">Delete</system:String>
+    <system:String x:Key="PhotoSelected_EditBtn">Edit</system:String>
+
+    <system:String x:Key="CheckPhoto_Title">CHECK PHOTOS</system:String>
+    <system:String x:Key="CheckPhoto_SaveBtn">Apply</system:String>
+    <system:String x:Key="CheckPhoto_NextBtn">Next</system:String>
+
+    <system:String x:Key="Deposit_Title">PLEASE MAKE PAYMENT</system:String>
+    <system:String x:Key="Deposit_PaymentTitle">Payment Information</system:String>
+    <system:String x:Key="Deposit_Email">Enter Email(*)</system:String>
+    <system:String x:Key="Deposit_Phone">Enter Phone Number</system:String>
+    <system:String x:Key="Deposit_PaymentBtn">Pay</system:String>
+    <system:String x:Key="Deposit_DiscountTitle">DISCOUNT CODE</system:String>
+    <system:String x:Key="Deposit_DiscountBtn">Confirm</system:String>
+
+    <system:String x:Key="FilterSelection_Title">CHOOSE FILTER</system:String>
+    <system:String x:Key="FilterSelection_Text">FILTER</system:String>
+    <system:String x:Key="FilterSelection_SaveBtn">Apply</system:String>
+    <system:String x:Key="FilterSelection_BackBtn">Back</system:String>
+
+    <system:String x:Key="PhotoDetail_Title">CHOOSE A METHOD TO RECEIVE YOUR PHOTO</system:String>
+    <system:String x:Key="PhotoDetail_EmailBtn">Send via Email</system:String>
+    <system:String x:Key="PhotoDetail_ZaloBtn">Send via Zalo</system:String>
+    <system:String x:Key="PhotoDetail_PrintBtn">Print Photo</system:String>
+
+    <system:String x:Key="QuantitySelection_Title">PLEASE CHOOSE A SERVICE PACKAGE</system:String>
+    <system:String x:Key="QuantitySelection_Text_Filter1">Duration:</system:String>
+    <system:String x:Key="QuantitySelection_Text_Filter2">Price:</system:String>
+    <system:String x:Key="QuantitySelection_Text_Filter3">Edited Photo:</system:String>
+    <system:String x:Key="QuantitySelection_Text_FilterButton">Filter</system:String>
+    <system:String x:Key="QuantitySelection_Text_ClearFilterButton">Clear Filter</system:String>
+
+    <system:String x:Key="QuantitySelection_Text_Table1">Name</system:String>
+    <system:String x:Key="QuantitySelection_Text_Table2">Description</system:String>
+    <system:String x:Key="QuantitySelection_Text_Table3">Duration (minutes)</system:String>
+    <system:String x:Key="QuantitySelection_Button">CONTINUE</system:String>
+
+    <system:String x:Key="QuantitySelection_Text">Enter the package code you want to use</system:String>
+    <system:String x:Key="QuantitySelection_PaymentText">Total Amount</system:String>
+    <system:String x:Key="QuantitySelection_PaymentBtn">Select</system:String>
+
+    <system:String x:Key="StickerEditor_Title">DECORATE BY STICKER</system:String>
+    <system:String x:Key="StickerEditor_SaveBtn">Save</system:String>
+</ResourceDictionary>

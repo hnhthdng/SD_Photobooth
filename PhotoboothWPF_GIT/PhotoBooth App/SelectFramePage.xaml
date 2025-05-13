@@ -1,0 +1,120 @@
+﻿<Page x:Class="PhotoBooth_App.SelectFramePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PhotoBooth_App"
+      mc:Ignorable="d" 
+      Title="SelectFrame_Title">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image\background_selectFrame.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="480" />
+            <ColumnDefinition Width="600*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1" Height="665" Width="600" Margin="90,-200,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+                
+                <Button Width="30" Height="30" Margin="0,0,10,0"
+                 Click="PreviousFrame_Click" Background="Transparent" BorderThickness="0">   
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Image x:Name="IconImage" Source="/image/button_select_back.png" Stretch="Uniform"
+                           RenderTransformOrigin="0.5,0.5">
+                                                <Image.RenderTransform>
+                                                    <ScaleTransform ScaleX="1.4" ScaleY="1.4"/>
+                                                </Image.RenderTransform>
+                                            </Image>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="IconImage" Property="RenderTransform">
+                                                    <Setter.Value>
+                                                        <ScaleTransform ScaleX="1.6" ScaleY="1.6"/>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+
+                <StackPanel Height="500" Width="500" Orientation="Horizontal">
+                    <Image x:Name="LeftFrame" Width="100" Height="150" Opacity="0.3" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                        </Image.RenderTransform>
+                    </Image>
+
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+
+                        <Image x:Name="PreviewFrame" Width="250" Height="350"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,-80">
+                            <TextBlock x:Name="FrameName" FontSize="20" FontWeight="Bold" TextAlignment="Center" Foreground="#FF4500" Margin="0,0,0,10"/>
+                            <TextBlock x:Name="FrameDescription" FontSize="14" TextAlignment="Center" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <Image x:Name="RightFrame" Width="100" Height="150" Opacity="0.3" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <ScaleTransform ScaleX="0.8" ScaleY="0.8"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </StackPanel>
+
+                <Button Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="10,0,0,0"
+                 Click="NextFrame_Click" Background="Transparent" BorderThickness="0">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Grid>
+                                            <Image x:Name="IconImage" Source="/image/button_select_next.png" Stretch="Uniform"
+                   RenderTransformOrigin="0.5,0.5">
+                                                <Image.RenderTransform>
+                                                    <ScaleTransform ScaleX="1.4" ScaleY="1.4"/>
+                                                </Image.RenderTransform>
+                                            </Image>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="IconImage" Property="RenderTransform">
+                                                    <Setter.Value>
+                                                        <ScaleTransform ScaleX="1.6" ScaleY="1.6"/>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+               
+            </StackPanel>
+            <Button Background="#fc9330" Click="SelectFrame_Click"  Width="200" Height="50" BorderBrush="White" Tag="#e07d1f" Margin="0,0,12,0"  VerticalAlignment="Bottom">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <TextBlock Text="{DynamicResource SelectFrame_Button}" Foreground="#FFFFFF" FontSize="18" FontWeight="Bold"  VerticalAlignment="Center" />
+                    </StackPanel>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Page>

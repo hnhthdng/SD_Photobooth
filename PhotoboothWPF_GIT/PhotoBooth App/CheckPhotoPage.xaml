@@ -1,0 +1,76 @@
+﻿<Page x:Class="PhotoBooth_App.CheckPhotoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="CheckPhoto_Title" >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="15,5,0,0">
+            <Border BorderBrush="Black" BorderThickness="2" CornerRadius="5" Padding="5">
+                <Viewbox>
+                    <Image x:Name="MainImage" Source="/image/user.png" Stretch="Uniform"/>
+                </Viewbox>
+            </Border>
+
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10">
+
+                <Button Content="Sticker" Click="Sticker_Click"  Tag="#e07d1f" Height="35" Background="#dcdcdc" BorderThickness="0" Width="80" 
+                       Foreground="Red" FontWeight="Bold"/>
+                <Button Content="{DynamicResource CheckPhoto_SaveBtn}"  Tag="#e07d1f" Click="Save_Click" Height="35" Background="#dcdcdc" BorderThickness="0"
+                Foreground="Red" FontWeight="Bold"/>
+
+                <Button Content="{DynamicResource CheckPhoto_NextBtn}" Tag="#e07d1f" Click="next_Click" Height="35"  Background="#dcdcdc" BorderThickness="0"
+                    Foreground="Red" FontWeight="Bold"/>
+            </StackPanel>
+            
+            
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10">
+                <Border Background="#dcdcdc" BorderBrush="Black" BorderThickness="2" 
+                CornerRadius="20" Padding="5" Width="80" Height="40" Margin="5"
+                MouseLeftButtonDown="ScrollUp">
+                    <TextBlock Text="◀" FontSize="20" Foreground="Red" FontWeight="Bold" 
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+                <Border Background="#dcdcdc" BorderBrush="Black" BorderThickness="2" 
+                CornerRadius="20" Padding="5" Width="80" Height="40" Margin="5"
+                MouseLeftButtonDown="ScrollDown">
+                    <TextBlock Text="▶" FontSize="20" Foreground="Red" FontWeight="Bold" 
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="1" Margin="15,0,10,0">
+            <ListBox x:Name="ImageList" SelectionChanged="ImageList_SelectionChanged"
+         ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+         ScrollViewer.VerticalScrollBarVisibility="Hidden"
+         Background="Transparent" BorderThickness="0" >
+
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border CornerRadius="10" BorderThickness="2" BorderBrush="White" Padding="5">
+                            <Grid>
+                                <Viewbox>
+                                    <Image Source="{Binding}" Stretch="UniformToFill"/>
+                                </Viewbox>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+    </Grid>
+</Page>

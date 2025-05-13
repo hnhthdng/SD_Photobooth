@@ -1,0 +1,51 @@
+{
+  "ButtonTest": {
+    "vi": "Việt Nam",
+    "en": "English",
+    "label": "Language"
+  },
+  "AppSidebar": {
+    "dashboard": "Dashboard",
+    "paymentMethod": "Payment Method",
+    "levelMembership": "Level Membership",
+    "frame": "Frame",
+    "listFrame": "List Frame",
+    "getByFrameStyle": "Get by Frame Style",
+    "frameStyle": "Frame Style",
+    "sticker": "Sticker",
+    "listSticker": "List Sticker",
+    "getByStickerStyle": "Get by Sticker Style",
+    "stickerStyle": "Sticker Style",
+    "typeSession": "Type Session",
+    "user": "User",
+    "function": "Function",
+    "accountManager": "Account (Manager)",
+    "accountStaff": "Account (Staff)",
+    "accountCustomer": "Account (Customer)",
+    "viewDetailCustomer": "View Detail Customer",
+    "banUnbanCustomer": "Ban/Unban Customer",
+    "photoStyle": "Photo Style",
+    "settings": "Settings",
+    "profile": "Profile",
+
+    "location": "Location",
+    "coupon": "Coupon",
+    "order": "Order",
+    "booth": "Booth",
+    "getBoothByLocation": "Get Booth by Location",
+    "listBooth": "List Booth",
+    "session": "Session",
+    "payment": "Payment",
+    "depositProduct": "Deposit Product",
+    "typeSessionProduct": "TypeSession Product",
+    "typeSessionProductList": "TypeSession Product List",
+    "getByCoupon": "Get by Coupon",
+    "getByTypeSession": "Get by Type Session",
+    "transaction": "Transaction",
+
+    "staffDashboard": "Staff Dashboard",
+    "sessionCode": "Session Code",
+    "membershipCard": "Membership Card",
+    "photoHistory": "Photo History"
+  }
+}

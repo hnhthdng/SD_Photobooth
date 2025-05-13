@@ -1,0 +1,36 @@
+﻿<ui:FluentWindow x:Class="PhotoBooth_App.MainWindow1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PhotoBooth_App" 
+      xmlns:uc="clr-namespace:PhotoBooth_App"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      Icon="pack://application:,,,/image/tech_x.ico"      
+      Title="SD Photobooth"  Height="720" Width="1080" WindowStartupLocation="CenterScreen" WindowState="Maximized" ResizeMode="NoResize">
+    <Grid Background="White">
+        <DockPanel LastChildFill="False" Height="55" VerticalAlignment="Top">
+            <uc:BackButtonControl Margin="20,5,0,0" x:Name="BackButtonControl" BackClicked="BackButton_Click" DockPanel.Dock="Left"/>
+            <uc:TitleControl Margin="-100,5,0,0" x:Name="TitleControl" DockPanel.Dock="Top"/>
+            <ComboBox x:Name="LanguageComboBox" SelectionChanged="LanguageComboBox_SelectionChanged"  Width="150" HorizontalAlignment="Right" 
+                       DockPanel.Dock="Right" Margin="0,-40,15,0" VerticalAlignment="Top">
+                <ComboBoxItem Tag="vi" IsSelected="True">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/icon_VN.png" Width="20" Height="15" Margin="5,0,5,0"/>
+                        <TextBlock>Vietnamese</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+                <ComboBoxItem Tag="en">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="image/icon_EN.png" Width="20" Height="15" Margin="5,0,5,0"/>
+                        <TextBlock>English</TextBlock>
+                    </StackPanel>
+                </ComboBoxItem>
+            </ComboBox>
+            <TextBlock DockPanel.Dock="Right" Margin="0,-40,30,0" x:Name="DurationTimeLeftTextBlock" FontWeight="Bold" FontSize="24"/>
+        </DockPanel>
+        <Grid Margin="0,55,0,0">
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+        </Grid>
+    </Grid>
+</ui:FluentWindow>

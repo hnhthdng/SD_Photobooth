@@ -1,0 +1,62 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <system:String x:Key="BackButton_Text">Quay lại</system:String>
+    <system:String x:Key="DeleteButton_Text">Xóa</system:String>
+
+    <system:String x:Key="SelectFrame_Title">HÃY CHỌN KIỂU ẢNH BẠN MUỐN CHỤP</system:String>
+    <system:String x:Key="SelectFrame_Button">CHỌN FRAME</system:String>
+    
+    <system:String x:Key="TakePhoto_Title">VUI LÒNG NHÌN VÀO MÀN HÌNH VÀ CHỤP ẢNH</system:String>
+    <system:String x:Key="TakePhoto_ZoomInBtn">GẦN</system:String>
+    <system:String x:Key="TakePhoto_ZoomOutBtn">XA</system:String>
+    <system:String x:Key="TakePhoto_TakeBtn">Chụp Ảnh</system:String>
+    <system:String x:Key="TakePhoto_NextBtn">Tiếp theo</system:String>
+    <system:String x:Key="TakePhoto_List">Danh sách ảnh đã chụp</system:String>
+    
+    <system:String x:Key="PhotoSelected_TakeBtn"> Chụp tiếp tục </system:String>
+    <system:String x:Key="PhotoSelected_DeleteBtn">Xóa</system:String>
+    <system:String x:Key="PhotoSelected_EditBtn">Chỉnh sửa</system:String>
+
+    <system:String x:Key="CheckPhoto_Title">KIỂM TRA ẢNH</system:String>
+    <system:String x:Key="CheckPhoto_SaveBtn">Áp dụng</system:String>
+    <system:String x:Key="CheckPhoto_NextBtn">Tiếp theo</system:String>
+    
+    <system:String x:Key="Deposit_Title">VUI LÒNG THANH TOÁN</system:String>
+    <system:String x:Key="Deposit_PaymentTitle">Thông tin thanh toán</system:String>
+    <system:String x:Key="Deposit_Email">Nhập Email(*)</system:String>
+    <system:String x:Key="Deposit_Phone">Nhập số điện thoại</system:String>
+    <system:String x:Key="Deposit_PaymentBtn">Thanh Toán</system:String>
+    <system:String x:Key="Deposit_DiscountTitle">MÃ GIẢM GIÁ</system:String>
+    <system:String x:Key="Deposit_DiscountBtn">Xác nhận</system:String>
+    
+    <system:String x:Key="FilterSelection_Title">CHỌN FILTER</system:String>
+    <system:String x:Key="FilterSelection_Text">FILTER</system:String>
+    <system:String x:Key="FilterSelection_SaveBtn">Áp dụng</system:String>
+    <system:String x:Key="FilterSelection_BackBtn">Quay lại</system:String>
+    
+    <system:String x:Key="PhotoDetail_Title">CHỌN PHƯƠNG THỨC ĐỂ NHẬN ẢNH</system:String>
+    <system:String x:Key="PhotoDetail_EmailBtn">Gửi Email</system:String>
+    <system:String x:Key="PhotoDetail_ZaloBtn">Gửi Zalo</system:String>
+    <system:String x:Key="PhotoDetail_PrintBtn">In Ảnh</system:String>
+    
+    <system:String x:Key="QuantitySelection_Title">HÃY CHỌN GÓI DỊCH VỤ SỬ DỤNG</system:String>
+    <system:String x:Key="QuantitySelection_Text_Filter1">Thời lượng:</system:String>
+    <system:String x:Key="QuantitySelection_Text_Filter2">Giá:</system:String>
+    <system:String x:Key="QuantitySelection_Text_Filter3">Ảnh chỉnh sửa:</system:String>
+    <system:String x:Key="QuantitySelection_Text_FilterButton">Lọc</system:String>
+    <system:String x:Key="QuantitySelection_Text_ClearFilterButton">Xóa Lọc</system:String>
+
+    <system:String x:Key="QuantitySelection_Text_Table1">Tên</system:String>
+    <system:String x:Key="QuantitySelection_Text_Table2">Mô tả</system:String>
+    <system:String x:Key="QuantitySelection_Text_Table3">Thời lượng(phút)</system:String>
+    <system:String x:Key="QuantitySelection_Button">TIẾP TỤC</system:String>
+
+    <system:String x:Key="QuantitySelection_Text">Mã số của gói dịch vụ bạn muốn sử dụng</system:String>
+    <system:String x:Key="QuantitySelection_PaymentText">Tổng số tiền</system:String>
+    <system:String x:Key="QuantitySelection_PaymentBtn">Chọn</system:String>
+
+    <system:String x:Key="StickerEditor_Title">TRANG TRÍ STICKER</system:String>
+    <system:String x:Key="StickerEditor_SaveBtn">Lưu</system:String>
+
+</ResourceDictionary>

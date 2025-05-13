@@ -1,0 +1,43 @@
+﻿<Page x:Class="PhotoBooth_App.DepositPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PhotoBooth_App"
+      xmlns:uc="clr-namespace:PhotoBooth_App"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Deposit_Title" Background="White">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image\bg.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid Margin="50,80,50,50">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" BorderBrush="Gray" BorderThickness="2" Padding="20" CornerRadius="10">
+                <StackPanel>
+                    <TextBlock Text="{DynamicResource Deposit_PaymentTitle}" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10"/>
+                    <TextBlock Text="{DynamicResource Deposit_Email}" FontSize="16" Margin="10,5,0,0"/>
+                    <TextBox x:Name="email_txt"  FontSize="24" FontWeight="Bold" Background="White" TextAlignment="Center" GotFocus="TextBox_GotFocus"/>
+                    <TextBlock Text="{DynamicResource Deposit_Phone}" FontSize="16" Margin="10,10,0,0"/>
+                    <TextBox x:Name="phone_txt" FontSize="24" FontWeight="Bold" Background="White" TextAlignment="Center" GotFocus="TextBox_GotFocus"/>
+                    <Button x:Name="Payment" Content="{DynamicResource Deposit_PaymentBtn}"  Tag="#e07d1f" Width="200" Height="50" Background="DarkRed" Foreground="White" FontSize="18" FontWeight="Bold" Margin="0,20,0,0" Visibility="Collapsed" Click="Payment_Click"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" BorderBrush="Gray" BorderThickness="2" Padding="20" CornerRadius="10">
+                <StackPanel>
+                    <TextBlock Text="{DynamicResource Deposit_DiscountTitle}" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10"/>
+                    <TextBox x:Name="DiscountCode" FontSize="18" Background="White" TextAlignment="Center" GotFocus="TextBox_GotFocus"/>
+                    <uc:Keyboard x:Name="keyboard"/>
+                    <uc:KeyboardText x:Name="textKeyboard" Visibility="Collapsed"/>
+                    <Button Content="{DynamicResource Deposit_DiscountBtn}"  Tag="#e07d1f" Width="200" Height="50" Background="DarkRed" Foreground="White" FontSize="18" FontWeight="Bold" Margin="0,20,0,0" Click="Accept_Click"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

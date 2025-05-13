@@ -1,0 +1,44 @@
+﻿<Window x:Class="PhotoBooth_App.ProgressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Printing Progress" 
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Width="300" Height="300"
+
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent">
+    <Border Background="White" CornerRadius="20" SnapsToDevicePixels="True">
+
+        <Grid>
+            <TextBlock Text="Đang xử lý..." HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,35,0,0" FontSize="20" FontWeight="Bold"/>
+            <Border CornerRadius="20"
+                Padding="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Margin="20">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Ellipse Width="150" Height="150" Stroke="#EEE" StrokeThickness="10"/>
+                    <Path x:Name="arcPath" Stroke="#FF5722" StrokeThickness="10" 
+                  StrokeStartLineCap="Round" StrokeEndLineCap="Round">
+                        <Path.Data>
+                            <PathGeometry>
+                                <PathFigure x:Name="arcFigure" StartPoint="75,5">
+                                    <ArcSegment x:Name="arcSegment" 
+                                        Point="75,5" 
+                                        Size="70,70" 
+                                        SweepDirection="Clockwise" 
+                                        IsLargeArc="False"/>
+                                </PathFigure>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                    <TextBlock x:Name="progressText" Text="0%" 
+                       FontSize="24" FontWeight="Bold" Foreground="#555"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
